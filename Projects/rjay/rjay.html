@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rjay.css">
+    <title>Simple Music Player</title>
+</head>
+<body>  
+    <div class="music-player">
+        <h1>Simple Music Player</h1>
+        <label for="songSelector">Select a song:</label>
+        <select id="songSelector">
+            <option value="./audio/CKay  Love Nwantiti TikTok Remix Lyrics I am so obsessed I want to chop your nkwobi.mp3">'Love Nyantiti'</option>
+            <option value="./audio/y2mate.com - Denial  Mary On A Cross slowed  reverb  lyrics .mp3">'Marry on a cross denial'</option>
+            <option value="./audio/y2mate.com - Apocalypse  Cigarettes After Sex.mp3">'Apocalypse'</option>
+            <option value="./audio/y2mate.com - K  Cigarettes After Sex.mp3">'K'</option>
+            <option value="./audio/y2mate.com - Radio.mp3">'Radio'</option>
+            <!-- Add more options as needed -->
+        </select>
+        <br>
+        <audio id="audio" controls>
+            <source id="audioSource" src="audio/CKay  Love Nwantiti TikTok Remix Lyrics I am so obsessed I want to chop your nkwobi.mp3" type="audio/mp3">
+            <source id="audioSource" src="audio/y2mate.com - Apocalypse  Cigarettes After Sex.mp3" type="audio/mp3">
+            <source id="audioSource" src="audio/y2mate.com - Denial  Mary On A Cross slowed  reverb  lyrics .mp3" type="audio/mp3">
+            <source id="audioSource" src="audio/y2mate.com - K  Cigarettes After Sex.mp3" type="audio/mp3">
+            <source id="audioSource" src="audio/y2mate.com - Radio.mp3" type="audio/mp3">
+
+            Your browser does not support the audio element.
+        </audio>
+        <button id="playPauseBtn">Play</button>
+    </div>
+
+    <script src="rjay.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="ken.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <div id="input-container">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter weight" required>
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" placeholder="Enter height" required>
+            <button id="calculate-btn">Calculate BMI</button>
+            <button id="clear-btn">Clear</button>
+        </div>
+        <div id="result-container">
+            <h2>Your BMI:</h2>
+            <p id="bmi-result"></p>
+            <div id="classification-container">
+                <h3>BMI Classification:</h3>
+                <p id="bmi-classification"></p>
+            </div>
+            <div id="tips-container">
+                <h3>Tips:</h3>
+                <p id="tips-list"></p>
+            </div>
+        </div>
+    </div>
+    <script src="ken.js" defer></script>
+</body>
+</html>
